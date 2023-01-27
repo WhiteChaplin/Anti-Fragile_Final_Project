@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%load static%}
+{% block title %}회원 탈퇴 완료{% endblock title %}
+
+{% block main_area %}
+<section class="blog-list px-3 py-5 p-md-5">
+    
+    <div>
+        <!-- <i class="fas fa-quote-left"></i> -->
+        <span class="h6">&ensp;방문해 주셔서 감사합니다. 회원탈퇴가 완료되었습니다. &ensp;</span>
+        <!-- <i class="fas fa-quote-right"></i> -->
+    </div>
+    <br>
+    <p class="font-italic"><a href="{% url 'login'%}">Log in again</a></p> <!--로그인 페이지로 돌아감-->
+</section>
+{% endblock main_area %}
