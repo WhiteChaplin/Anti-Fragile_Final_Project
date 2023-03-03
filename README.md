@@ -4,6 +4,9 @@
 일기를 작성하여 내용에 내포된 자신의 감정을 파악하고 추천 컨텐츠를 통해 좋은 감정을 유지하는데 도움을 주는 서비스입니다.
 <br><br>
 
+## :calendar: Project period
+2023.01.04 ~ 2023.01.31 <br><br>
+
 ## Team Introduce
 ### 노한진(Team Leader)
 Email : nsn1180@gmail.com <br>
