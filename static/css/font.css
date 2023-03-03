@@ -3,7 +3,14 @@
 /*
 	Font
 */
-@font-face {
+
+/* @font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @font-face {
 	font-family: 'Noto Sans KR';
 	font-style: normal;
 	font-weight: 300;
@@ -41,7 +48,7 @@
 
 
 /* Roboto */
-
+/* 
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
@@ -74,14 +81,16 @@
 	font-style: normal;
 	font-weight: 900;
 	src: url(../font/Roboto-Black.woff2) format('woff2'),
-		url(../font/Roboto-Black.woff) format('woff');
+		url(../font/Roboto-Black.woff) format('woff'); */
 		
 }
 /* Myriad Pro */
+/*
 @font-face {
 	font-family: 'Myriad Pro';
 	font-style: normal;
 	font-weight: 900;
 	src:url(../font/MyriadPro-Bold.woff) format('woff');
 		
-}
+} 
+*/

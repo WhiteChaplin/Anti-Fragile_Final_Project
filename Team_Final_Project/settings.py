@@ -12,16 +12,22 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+import secret
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = secret.BASE_DIR
+
+
+import pickle
+MODEL = pickle.load(open(r'C:\Django\Team_Final_Project\static\models\Final_Model.pkl', 'rb'))
+print("SETTINGS > Model Load 완료")
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-rmr0fd7_3xxbzo*vx-qqr1vg^*&$ccylfu1q_n8dm1&$hzbq!q'
+SECRET_KEY = secret.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -86,12 +92,7 @@ WSGI_APPLICATION = 'Team_Final_Project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES = secret.DATABASES
 
 
 # Password validation

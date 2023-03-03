@@ -1503,7 +1503,7 @@ pre code {
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #e3e6f0;
+  border-top: 3px solid #000000;
 }
 
 .table-sm th,

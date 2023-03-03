@@ -1,25 +1,28 @@
-{%extends 'base.html'%}
-{%load static%}
-{%block my_style%}
-<link href="{%static 'css/my_style.css'%} " rel="stylesheet" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-{%endblock my_style%}
-{% block title %}
-<title>회원가입 성공</title>  
-
-{% endblock title %}
-
-
+{% load static %}
+{% include 'base.html' %}
 {% block content %}
-<video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="opacity: 0.5; z-index: -1;"><source src="{% static 'assets/mp4/bg3.mp4' %}" type="video/mp4" /></video>
-<section class="blog-list px-1 py-1 p-md-1">
-  <br>
+<style>
+    /*
+    body{
+        height: 100vh;
+        background: "{%static 'css/images/layout/login.png'%}" no-repeat center;
+        overflow-y: ;
+    }
+    */
+</style>
+<body background="{%static 'css/images/layout/login3.png'%}"  style="overflow-y: hidden;  background-size: cover; background-repeat: no-repeat; background-position: top;">
+    <!-- Background Video-->
 
-  <div class="card pt-3" style="text-align: center;">
-    <p>감사합니다. 회원가입을 정상적으로 완료했습니다.</p>
-    <br>
-    <p class="font-italic"><a href="/">Log in</a></p>  
-  </div>
-  
-</section>
+        <div class="masthead  mt-3" style="text-align: center; margin: 0 auto;" >
+            <div>
+                <h1 style="color: gray;">회원가입이 완료되었습니다</h1>
+                <h2 style="color: white;"><a href="{% url 'login'%}">Log in again</a></h2> <!--로그인 페이지로 돌아감-->
+            </div>
+        </div>
+
+    
+</body>
 {% endblock content %}
+{% block script %}
+    
+{% endblock script %}        

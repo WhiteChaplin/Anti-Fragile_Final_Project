@@ -4,7 +4,10 @@ from django.urls import reverse_lazy
 from .forms import CreateUserForm
 from django.contrib.auth import login, authenticate, logout
 from Account.forms import UserForm
-
+from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth import update_session_auth_hash
+from django.contrib import messages, auth
+from django.contrib.auth.hashers import check_password
 # def test(reauests):
 #     return render(reauests,'test.html')
 
@@ -71,3 +74,36 @@ def get_redirect_if_exists(request):
         if request.GET.get("next"):
             redirect = str(request.GET.get("next"))
     return redirect
+
+def change_password(request):
+    context= {}
+    if request.method == "POST":
+        print("ok")
+        user = request.user
+        origin_password = request.POST["origin_password"]
+        if check_password(origin_password, user.password):
+            print("ok1")
+            new_password = request.POST["new_password"]
+            print(len(new_password))
+            confirm_password = request.POST["confirm_password"]
+            if len(new_password) < 8:
+                print(len(new_password))
+                context.update({'error':"8자 이상으로 입력해주세요"})  
+                return render(request, 'registration/password_change.html',context = context)
+            else:
+                if new_password == confirm_password:
+                    print("ok2")
+                    user.set_password(new_password)
+                    user.save()
+                    return redirect('/accounts/logout')
+                else:
+                    print("ok3")
+                    messages.error(request, 'Password not same')
+                    context.update({'error':"새로운 비밀번호를 다시 확인해주세요."})
+                    return render(request, 'registration/password_change.html',context = context)
+        else:
+            context.update({'error':"현재 비밀번호가 일치하지 않습니다."})
+            messages.error(request, 'Password not correct')
+        return render(request, 'registration/password_change.html', context = context)
+    else:
+        return render(request, 'registration/password_change.html')

@@ -268,13 +268,9 @@ sup {
 }
 
 a {
-    color: #2a5555;
     text-decoration: underline;
 }
 
-a:hover {
-    color: #224444;
-}
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -12273,23 +12269,11 @@ video.bg-video {
 .masthead {
     position: relative;
     overflow: hidden;
-    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.masthead:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* 로고 컬러 */
-}
 
 .masthead .masthead-content {
     position: relative;
@@ -12336,10 +12320,6 @@ video.bg-video {
         padding-bottom: 0;
     }
 
-    .masthead:before {
-        transform: skewX(-9deg);
-        transform-origin: top right;
-    }
 
     .masthead .masthead-content {
         padding-top: 0;

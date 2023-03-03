@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from .views import Cal_t, Index2, Index, RegisterPage, BoardPage, UserCreateView,test, UserCreateDoneTV,login_view
+from .views import Cal_t, Index2, Index, RegisterPage, BoardPage, UserCreateView,test, UserCreateDoneTV,login_view, change_password
 from django.contrib.auth import views as auth_view
 from django.conf import settings
 from django.conf.urls.static import static
@@ -28,5 +28,7 @@ urlpatterns = [
     path('register/', UserCreateView.as_view(), name="register"),
     path('register/done/', UserCreateDoneTV.as_view(), name = 'register_done'),
     path('board/',include('EmotionBoard.urls')),
+    path('account/password_change', change_password, name="password_change"),
+    path('Account/', include('Account.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -43,10 +43,10 @@ class Account(AbstractBaseUser):
     username = models.CharField(verbose_name = 'name',max_length=40, null=False, blank=False, unique=True)
     create_at = models.DateTimeField(auto_now_add=True, verbose_name="회원가입 날짜")
     birth_date = models.DateField(null=True, blank=True)
-    is_admin = models.BooleanField(default=False)
-    is_active = models.BooleanField(default=True)
-    is_staff = models.BooleanField(default=False)
-    is_superuser = models.BooleanField(default=False)
+    is_admin = models.BooleanField(default=False) #admin인지 
+    is_active = models.BooleanField(default=True) #활성화 되어있는 유저인지
+    is_staff = models.BooleanField(default=False) #admin page 접근 권한
+    is_superuser = models.BooleanField(default=False) #superuser인지. 장고안에선 의미가 없는듯 하지만 boolean 타입으로 넣어두어서 나중에 특정 접근권한으로 사용하면 됨
     
 
     

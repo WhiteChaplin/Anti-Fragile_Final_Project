@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Dataset,Diary,DiaryTemp,Emotion_Category,Genre_Category,Movie_Drama_Recommend,Recommend_Youtube
-
+from .models import ModelValidDataset, UserSelectGenreForEmotion
 # Register your models here.
 
 admin.site.register(Dataset)
@@ -17,3 +17,5 @@ class Emotion_Category_Admin(admin.ModelAdmin):
     
 admin.site.register(Emotion_Category, Emotion_Category_Admin)
 admin.site.register(Genre_Category)
+admin.site.register(ModelValidDataset)
+admin.site.register(UserSelectGenreForEmotion)
