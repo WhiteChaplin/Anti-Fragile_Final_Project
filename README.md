@@ -1,7 +1,7 @@
 # Anti-Fragile_Final_Project
 <br>
-<h2> Life Log </h2>
-일기를 이용하여 자신의 감정을 파악하고 추천 컨텐츠를 통해 좋은 감정을 유지하는데 도움을 주는 서비스입니다.
+<h2> :orange_book: Life Log </h2>
+일기를 작성하여 내용에 내포된 자신의 감정을 파악하고 추천 컨텐츠를 통해 좋은 감정을 유지하는데 도움을 주는 서비스입니다.
 <br><br>
 
 ## Team Introduce
@@ -21,9 +21,32 @@ https://github.com/Wooney98 <br>
 역할 : 프로젝트 문서화, 데이터 수집/전처리, 백앤드 개발
 
 ### 허모아
-git : https://github.com/mollangbaby
+git : https://github.com/mollangbaby <br>
 역할 : 데이터 수집/전처리, 모델링
 
 ### 한정훈
-git : https://github.com/mollangbaby
+git : https://github.com/mollangbaby <br>
 역할 : 데이터 수집/적재, 모델링
+
+
+## :key:Tech Stack
+### Web
+Django, HTML, CSS, JavaScript
+<br>
+### Data Engineering
+Colab Env, Pytorch, Pandas, SKT Kobert Model
+<br>
+### IDE
+Visual Code, Google Colab
+<br>
+### API
+Youtube API, TMDB API, AI Hub
+<br>
+### DB
+MySQL with Aws RDS
+<br>
+### Collaboration
+Notion, Git, Slack
+<br>
+### Design ProtoType
+Figma
