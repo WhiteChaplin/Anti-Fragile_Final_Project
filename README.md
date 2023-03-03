@@ -50,3 +50,7 @@ Notion, Git, Slack
 <br>
 ### Design ProtoType
 Figma
+
+
+## 시연영상
+<img width="500" src="https://user-images.githubusercontent.com/102860997/222767045-5483a48b-088c-4ade-b0c6-b9ebd88a0be7.mp4/>
