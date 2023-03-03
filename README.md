@@ -26,9 +26,8 @@ git : https://github.com/mollangbaby <br>
 
 ### 한정훈
 git : https://github.com/mollangbaby <br>
-역할 : 데이터 수집/적재, 모델링
+역할 : 데이터 수집/적재, 모델링 <br><br>
 
-<br>
 ## :key:Tech Stack
 ### Web
 Django, HTML, CSS, JavaScript
@@ -49,8 +48,7 @@ MySQL with Aws RDS
 Notion, Git, Slack
 <br>
 ### Design ProtoType
-Figma
+Figma  <br><br>
 
-<br>
 ## 시연영상
 <img width="300" src="https://user-images.githubusercontent.com/102860997/222767045-5483a48b-088c-4ade-b0c6-b9ebd88a0be7.mp4/">
