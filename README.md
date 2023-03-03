@@ -7,7 +7,7 @@
 
 ## Team Introduce
 ### 노한진(Team Leader)
-Email : nsn1180@gmail.com
+Email : nsn1180@gmail.com <br>
 git : https://github.com/WhiteChaplin
 Notion : https://climbing-strand-7d8.notion.site/Essential-65ee473d42a54c7fb2e2e7ed0fd9ef09
 역할 : 프로젝트 기획 및 관리, 운영, 프론트, 백앤드 개발
